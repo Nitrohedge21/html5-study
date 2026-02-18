@@ -1,0 +1,22 @@
+	Notes I'm taking for the HTML5 study.
+    
+    <!--This is an HTML comment-->
+
+
+// "title" is used to display a text upon hovering on the chosen text/button
+<h1 title="Balls"> Placeholder Text	</h1> 
+
+// "style" can be used for many things(?) like opacity for example
+<h1 style="opacity: 0.5;"> Placeholder Text	</h1> 
+
+// This creates a button that is linked to google.com
+<body>
+		<a href="https://google.com">
+			<button"> Testing Button </button> 
+		</a>
+</body>
+
+// This can be used to give spacing on the chosen direction
+<a> style="margin-bottom: 10px;"
+
+// <div> can be used for just one line/phrase/sentence with custom attributes
