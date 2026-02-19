@@ -20,3 +20,21 @@
 <a> style="margin-bottom: 10px;"
 
 // <div> can be used for just one line/phrase/sentence with custom attributes
+
+// This is used to make the website scale based on your device
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+// <strong> or <b> can be used to make a text bold
+
+// <i> or <em> can be used to tilt the text
+
+// <u> adds a line under the text
+
+// <mark> fosforlu kalem
+
+// <sub> or <sup> Moves the text up/down on the same line
+
+// <code> is used to make text appear inside a code block
+
+// <span> can be used to colour a specific part of a sentence
+<p>My mother has <span style="color:blue">blue</span> eyes.</p>

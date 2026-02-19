@@ -3,36 +3,130 @@
 <!--Apparently helps displaying Turkish characters-->
 <!--<meta charset="utf-8"-->
 
-<html>
+<html lang="en">
 	<head>
 		<title> Is this working? </title>
+		<meta content="This is the content attribute that makes the website more findable upon search.">
+		<meta content="Put information about the website specific things here.">
+		<meta name="viewport" content="width=device-width; initial-scale=1.0">
+		<link rel="icon" href="images/favicon.ico" type="image/x-icon">
 	</head>
 	
 	<body>
-	<h1> Hmm lemme think... </h1>
-	<p> Yeah!</p>
+		<h1> Hmm lemme think... </h1>
+		<p> Yeah!</p>
 	</body>
 		
 	<!--This is a comment-->
-
 	<body>
-		<a href="https://google.com">
-			<button style="color: blue; margin-bottom: 10px;"> Testing Button </button>
-		</a>
+		<div id="button">
+			<a href="https://google.com">
+				<button style="color: blue; margin-bottom: 10px;"> Testing Button </button>
+			</a> <br>
+		</div>
+		
 	</body>
 
 	<body>
-		<img src="https://placehold.co/400"> </img> <br>
-		<p> This is an image being loaded through a link!</p> <br>
+		<figure>
+			<img src="https://placehold.co/400";
+			alt="placehold.co";
+			width="400";
+			height="400">
+				<figcaption>This is an image being loaded through a link!</figcaption>
+		</figure>
+
+		<figure>
+			<img src="images/placeholder.png";
+			alt="placeholder.png"
+			width="400";
+			height="400">
+				<figcaption>This is an image being loaded locally!</figcaption>
+		</figure>
 	</body>
-	
 
 	<body>
-		<h2 style="opacity: 0.5;" , title="This is a testing hover text">
-			This is a header 2 <br>
-			And the opacity is set to 0.5!
+		<h2 style="opacity: 0.5;" title="This is a testing hover text">
+			<b>
+				<mark>
+					This is a header 2 <br>
+					And the opacity is set to 0.5!
+				</mark>
+			</b>	
 		</h2>
-		<br>
 	</body>
+
+	<article style="color: rgb(182, 13, 204);">
+		This is apparently an article
+	</article>
+
+	<code>
+		// This is basically if I were to put code on the website <br>
+		if (condition) { RunTheLogic(); }
+	</code>
+
+	<body>
+		<ol>
+			<br> <b> <span style="font-size:x-large;">This is an ordered list</b></span>
+			<li>
+				<span style="font-size:large;">Red ball</span>
+			</li>
+			<li>
+				<span style="font-size:large;">Green ball</span>
+			</li>
+			<li>
+				<span style="font-size:large;">Blue ball</span>
+			</li>
+		</ol>
+	</body>
+
+	<body>
+		<ul>
+			<br> <b> <span style="font-size: x-large;">This is an unordered list</b></span>
+			<li>
+				Red ball
+			</li>
+			<li>
+				Green ball
+			</li>
+			<li>
+				Blue ball
+			</li>
+		</ul>
+	</body>
+
+	<body>
+		<ol start=" 4">
+			<br> <b> This list starts from 4</b>
+			<li>
+				Red ball
+			</li>
+			<li>
+				Green ball
+			</li>
+			<li>
+				Blue ball
+			</li>
+		</ol>
+	</body>
+
+	<body>
+		<ol reversed="reversed" start="4" type="I">
+			<br> <b> This list also starts from 4 but counts down</b>
+			<li>
+				Red ball
+			</li>
+			<li>
+				Green ball
+			</li>
+			<li>
+				Blue ball
+			</li>
+		</ol>
+	</body>
+
+	<footer> <br>
+		Ersan Efe Oğuz - 2026
+	</footer>
 
 </html>
