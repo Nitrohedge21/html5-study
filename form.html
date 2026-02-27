@@ -21,11 +21,49 @@
     <body>
         <center>
         <h1> Leave your contact info! </h1>
-            <form name="sign-up-form" action="signup.php" method="get">
+		<!--I currently don't know the difference between php and asp documents-->
+            <form name="sign-up-form" action="signup.php" method="post">
                 <table>
-                    <tr><td><b> Name & Surname </b> </td> <td>  <input type="text" name="name-surname" required="True"> </td></tr>
-                    <tr><td><b> Email Address </b></td> <td>  <input type="email" name="email-address" required="True"> </td></tr>
-                     <tr><td><input type="submit" value="Submit"></td></tr>
+                    <tr><td><b> Name & Surname </b> </td> <td>  
+						<input type="text"
+						name="name-surname"
+						placeholder="John Doe"
+						required="True">
+					 </td></tr>
+
+                    <tr><td><b> Email Address </b></td> <td>  
+						<input type="email"
+						name="email-address"
+						placeholder="johndoe@email.com"
+						required="True"> 
+					</td></tr>
+
+					 <tr><td>
+						<tr><td><b> Contact Company </b></td> <td>  
+						<select>
+							<option selected disabled> Choose a company</option>
+							<option> Megaron </option>
+							<option> ANK </option>
+							<option> Beyoğlu </option>
+						</select>
+					</td></tr>
+
+                     <tr><td>
+						<tr><td><b> Comments </b></td> <td>  
+						<textarea 
+						rows="3"
+						cols="21"
+						placeholder="Any comments?"></textarea>
+					</td></tr>
+
+                	 <tr><td>
+						<input type="image"
+						src="images/submit.png"
+						width="70px"
+						style="vertical-align: middle;">
+						<input type="submit" value="Submit but lame">
+						<input type="reset" value="Reset">
+					</td></tr>
                 </table>
             </form>
         </center>

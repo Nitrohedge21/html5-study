@@ -38,3 +38,11 @@
 
 // <span> can be used to colour a specific part of a sentence
 <p>My mother has <span style="color:blue">blue</span> eyes.</p>
+
+// The "method" can either be GET or POST. Post keeps information hidden
+<form name="sign-up-form" action="signup.php" method="post">
+
+// autoplay attribute doesn't work if the video isn't muted.
+<video src="videos/demo.mp4" controls autoplay muted height="500">
+
+// No clue if " type="video/mp4" " is necessary to define as the file is already doing that
