@@ -2,3 +2,27 @@ h2
 {
     color:aqua
 }
+
+:root
+{
+    background-color: var(--website-theme);
+}
+
+body
+{
+
+}
+
+#dark-mode
+{
+    --website-theme: black;
+    color: white;
+    font-style:normal;
+}
+
+#light-mode
+{
+    --website-theme: white;
+    color: black;
+    font-style:normal;
+}
