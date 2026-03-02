@@ -46,3 +46,9 @@
 <video src="videos/demo.mp4" controls autoplay muted height="500">
 
 // No clue if " type="video/mp4" " is necessary to define as the file is already doing that
+
+// "target" can either not be written or set to "_self" to open in the same page
+<a href="form.html" target="_self"> 
+
+// "target" can be set to "_blank" to open a new page
+<a href="form.html" target="_blank"> 

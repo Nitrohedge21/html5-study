@@ -10,12 +10,13 @@ h2
 
 body
 {
-
+    font-style: normal;
 }
 
 #dark-mode
 {
     --website-theme: black;
+    background-color: black;
     color: white;
     font-style:normal;
 }
@@ -23,6 +24,19 @@ body
 #light-mode
 {
     --website-theme: white;
+        background-color: white;
     color: black;
     font-style:normal;
+}
+
+a
+{
+    text-decoration: none;
+}
+
+a:hover
+{
+    color: rgba(183, 0, 207, 0.993);
+    font-size: 17px;
+    text-decoration: underline;
 }

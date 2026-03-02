@@ -3,7 +3,7 @@
 <!--Apparently helps displaying Turkish characters-->
 <!--<meta charset="utf-8"-->
 
-<html lang="en" data-theme="light-mode">
+<html lang="en" data-theme="dark-mode">
 	<head>
 		<title> Home Page </title>
 		<meta content="This is the content attribute that makes the website more findable upon search.">
@@ -13,27 +13,36 @@
 		<link rel="stylesheet" href="style.css" type="text/css">
 	</head>
 	
-	<center>
-	<body id="page-top">
-		<h1> Hmm lemme think... </h1>
-		<p> Yeah!</p>
-	</body>
-		
 	<!--This is a comment-->
-	<body>
-		<div id="button">
-			<a href="page-2 .html">
-				<button style="color: blue; margin-bottom: 10px;"> 2nd Page same tab </button></a>
-			>>
-			<a href="page-2 .html" target="_blank">
-				<button style="color: blue; margin-bottom: 10px;"> 2nd Page new tab </button></a>
-			>>
-			<a href="form.html" target="_blank">
-				<button style="color: blue; margin-bottom: 10px;"> 3rd Page </button></a>
-		</div>
-	</body>
+	<body style="text-align: center;">
 
-	<body>
+		<h1 id="page-top"> Hmm lemme think... </h1>
+		<p> Yeah!</p>
+
+		<div id="button" style="border-style:groove;
+		border: 2px groove; 
+    	border-radius: 10px; 
+    	display: inline-block;
+		background-color: red;
+		border-color: red;">
+			<a href="page-2 .html" target="_self">
+				<button style="color: blue;
+				 margin: 10px"> 2nd Page</button></a>
+			>>
+			<a href="form.html" target="_self">
+				<button style="color: blue;
+				 margin: 10px"> Form Page </button></a>	
+			>>
+			<a href="list.html" target="_self">
+				<button style="color: blue;
+				 margin: 10px"> List Page </button></a>
+			>>
+			<a href="media.html" target="_self">
+				<button style="color: blue;
+				 margin: 10px"> Media Page </button></a>
+			
+		</div>
+
 		<figure>
 			<img src="https://placehold.co/400"
 			alt="placehold.co"
@@ -49,9 +58,7 @@
 			height="400">
 				<figcaption>This is an image being loaded locally!</figcaption>
 		</figure>
-	</body>
 
-	<body>
 		<h2 style="opacity: 0.5;" title="This is a testing hover text">
 			<b>
 				<mark>
@@ -60,87 +67,38 @@
 				</mark>
 			</b>	
 		</h2>
-	</body>
 
-	<article style="color: rgb(182, 13, 204);">
+		<article style="color: rgb(182, 13, 204);">
 		This is apparently an article
-	</article>
+		</article>
 
-	<code>
-		// This is basically if I were to put code on the website <br>
-		if (condition) { RunTheLogic(); }
-	</code>
+		<code>
+			// This is basically if I were to put code on the website <br>
+			if (condition) { RunTheLogic(); }
+		</code> <br><br>
+		
+		<div style="border: 2px groove;
+		display: inline-block;
+		overflow: scroll;
+		width: 500px;
+		height: 100px;"> 
+			This is just to demonstrate the text scrolling!
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+			sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+			Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+			nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+			reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+			pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+			culpa qui officia deserunt mollit anim id est laborum.
+		</div>
 
-	<body>
-		<ol>
-			<br> <b> <span style="font-size:x-large;">This is an ordered list</b></span>
-			<li>
-				<span style="font-size:large;">Red ball</span>
-			</li>
-			<li>
-				<span style="font-size:large;">Green ball</span>
-			</li>
-			<li>
-				<span style="font-size:large;">Blue ball</span>
-			</li>
-		</ol>
+		<hr>
+		<a href="#page-top"> Go back to the top </a>
+		<hr>
+
 	</body>
 
-	<body>
-		<ul>
-			<br> <b> <span style="font-size: x-large;">This is an unordered list</b></span>
-			<li>
-				Red ball
-			</li>
-			<li>
-				Green ball
-			</li>
-			<li>
-				Blue ball
-			</li>
-		</ul>
-	</body>
-
-	<body>
-		<ol start=" 4">
-			<br> <b> This list starts from 4</b>
-			<li>
-				Red ball
-			</li>
-			<li>
-				Green ball
-			</li>
-			<li>
-				Blue ball
-			</li>
-		</ol>
-	</body>
-
-	<body>
-		<ol reversed="reversed" start="4" type="I">
-			<br> <b> This list also starts from 4 but counts down</b>
-			<li>
-				Red ball
-			</li>
-			<li>
-				Green ball
-			</li>
-			<li>
-				Blue ball
-			</li>
-		</ol>
-	</body>
-
-
-	<hr>
-	<center>
-	<a href="#page-top"> Go back to the top </a>
-	</center>
-	<hr>
-
-	</center>
-	
-	<footer> <br>
+	<footer style="text-align: left;"> <br>
 		Ersan Efe Oğuz - 2026
 	</footer>
 
