@@ -1,0 +1,116 @@
+#page {
+    width: var(--website-width);
+    min-height: 600px;
+    border-radius: 5px;
+    border-style: solid;
+    margin: auto;
+}
+
+:root {
+    --bg-color: #ffffff;
+    --text-color: #222222;
+    --btn-bg: #eeeeee;
+    --border-color: black;
+    --website-width: 750px;
+    --header-color: darkblue;
+}
+
+/* This class overrides the variables when active */
+body.dark-mode {
+    --bg-color: #1a1a1a;
+    --text-color: #f0f0f0;
+    --btn-bg: #333333;
+    --border-color:white;
+    --header-color: blue;
+
+}
+
+body {
+    background-color: var(--bg-color);
+    border-color: var(--border-color);
+    color: var(--text-color);
+    transition: all 0.4s ease; /* Makes the switch feel smooth */
+    display: flex;
+    flex-direction: column;
+
+}
+
+#banner {
+    width: var(--website-width);
+    min-height: 125px;
+    border-bottom: 3px solid var(--border-color);
+    margin: auto;
+    background-color: rgb(0, 128, 68);
+    transition: all 0.4s ease; /* Makes the switch feel smooth */
+
+}
+
+#main-menu
+{
+    width: var(--website-width);
+    min-height: 40px;
+    border-bottom: 3px solid var(--border-color);
+    margin: auto;
+    background-color: rgb(0, 255, 136);
+    transition: all 0.4s ease; /* Makes the switch feel smooth */
+    align-content: center;
+    text-align: center;
+}
+
+#content
+{
+    width: 527px;
+    min-height: 700px;
+    float: left;
+    transition: all 0.4s ease; /* Makes the switch feel smooth */
+    text-align: left;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#aside-menu
+{
+    width: 200px;
+    min-height: 700px;
+    border-left: 3px solid var(--border-color);
+    float: right;
+    background-color: rgb(168, 168, 168);
+    transition: all 0.4s ease; /* Makes the switch feel smooth */
+    color: black;
+    text-align: center;
+
+}
+
+#logo
+{
+    width: 100px;
+    height: 100px;
+    position: relative;
+    top:10px;
+    left: 20px;
+}
+
+#theme-icon
+{
+    width: 50px;
+    height: 50px;
+    position: relative;
+    left: 580px;
+    bottom: 15px;
+}
+
+#menu-buttons
+{
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+    border-color: var(--border-color);
+}
+
+#header2
+{
+    color: var(--header-color);
+    line-height: 5px;
+    text-align: center;
+    transition: all 0.4s ease; /* Makes the switch feel smooth */
+}
