@@ -63,7 +63,7 @@ body {
     min-height: 700px;
     float: left;
     transition: all 0.4s ease; /* Makes the switch feel smooth */
-    text-align: left;
+    text-align: justify;
     margin-left: 10px;
     margin-right: 10px;
 }
@@ -77,8 +77,7 @@ body {
     background-color: rgb(168, 168, 168);
     transition: all 0.4s ease; /* Makes the switch feel smooth */
     color: black;
-    text-align: center;
-
+    text-align: justify;
 }
 
 #logo
