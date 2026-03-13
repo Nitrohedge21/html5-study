@@ -1,3 +1,30 @@
+// --- 1. SYNC THE ICON ON LOAD ---
+// This runs as soon as this script file is loaded
+window.addEventListener('DOMContentLoaded', () => {
+    const icon = document.getElementById("theme-icon");
+    // Check if the HTML tag has the dark-mode class
+    if (document.documentElement.classList.contains("dark-mode")) {
+        if (icon) icon.src = "images/white-moon.png";
+    }
+});
+
+// --- 2. THE TOGGLE FUNCTION ---
+function changeTheme() {
+    const html = document.documentElement; // Target the HTML tag
+    const icon = document.getElementById("theme-icon");
+
+    // Toggle the class on the HTML tag
+    html.classList.toggle("dark-mode");
+
+    if (html.classList.contains("dark-mode")) {
+        icon.src = "images/white-moon.png";
+        localStorage.setItem("theme", "dark");
+    } else {
+        icon.src = "images/black-sun.png";
+        localStorage.setItem("theme", "light");
+    }
+}
+
 function openLink(website) {
     
     if (!website)
@@ -9,25 +36,4 @@ function openLink(website) {
         const fullUrl = "https://" + website;
         window.open(fullUrl, "_blank");
     }
-}
-
-function changeTheme()
-{
-    console.log('The theme has been changed!!!!')
-    const body = document.body;
-    const icon = document.getElementById("theme-icon");
-
-    // 1. Toggle the background theme class
-    body.classList.toggle("dark-mode");
-
-    // 2. Check if we are now in dark mode
-    if (body.classList.contains("dark-mode")) {
-        // If it IS dark mode, show the moon
-        icon.src = "images/white-moon.png";
-       // alert('HIIII, I CHANGED YOUR THEME');
-    } else {
-        // If it IS NOT dark mode, show the sun
-        icon.src = "images/black-sun.png";
-    }
-
 }

@@ -12,6 +12,13 @@
         <link rel="stylesheet" href="style.css">
         <script src="test.js" defer></script>
         <meta charset="utf-8">
+
+        <script>
+            if (localStorage.getItem("theme") === "dark") {
+            // Apply the class to the HTML tag immediately
+            document.documentElement.classList.add("dark-mode");
+        }
+        </script>
     </head>
 
     <body>
@@ -110,15 +117,13 @@
 
             </aside>
 
+            <footer id="footer">
+
+            <p>Footer here or something idk</p>
+
+            </footer>
+
         </div>
     </body>
-
-    <footer id="footer" style="text-align: left; margin-left: auto; margin-right: auto;">
-
-    <a>Footer here or something idk</a>
-
-    </footer>
-
-
     
 </html>
