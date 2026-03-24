@@ -70,3 +70,7 @@
 var X = true / var X = 5 / var X = "name"
 
 // To create a normal variable on Javascript, use "var". In order to create one locally, use "let"
+
+// Apparently the variable can be more than one type at a time
+var X = "Your age is " + 20;
+document.write(x) --> Your age is 20 

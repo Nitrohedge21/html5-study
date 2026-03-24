@@ -1,4 +1,3 @@
-// --- 1. SYNC THE ICON ON LOAD ---
 // This runs as soon as this script file is loaded
 window.addEventListener('DOMContentLoaded', () => {
     const theme_icon = document.getElementById("theme-icon");
@@ -11,7 +10,6 @@ window.addEventListener('DOMContentLoaded', () => {
     }
 });
 
-// --- 2. THE TOGGLE FUNCTION ---
 function changeTheme() {
     const html = document.documentElement; // Target the HTML tag
     const theme_icon = document.getElementById("theme-icon");
