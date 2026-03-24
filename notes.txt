@@ -55,3 +55,8 @@
 
 // In order to apply specific attributes while the website is in dark mode, it has to be done like below.
 .dark-mode .custom-class / .dark-mode #custom-id / .dark-mode #custom-id:hover
+
+// In Javascript, you don't need to specificy the type of the variable.
+var X = true / var X = 5 / var X = "name"
+
+// To create a normal variable on Javascript, use "var". In order to create one locally, use "let"
