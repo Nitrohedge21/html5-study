@@ -52,3 +52,6 @@
 
 // "target" can be set to "_blank" to open a new page
 <a href="form.html" target="_blank"> 
+
+// In order to apply specific attributes while the website is in dark mode, it has to be done like below.
+.dark-mode .custom-class / .dark-mode #custom-id / .dark-mode #custom-id:hover

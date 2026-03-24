@@ -64,6 +64,7 @@ body {
     text-align: justify;
     margin-left: 10px;
     margin-right: 10px;
+    padding-bottom: 5px;
 }
 
 #aside-menu
@@ -150,28 +151,16 @@ body {
     #banner{
         width: 500px;
         min-height: 125px;
-        border-bottom: 3px solid var(--border-color);
-        margin: auto;
-        background-color: rgb(0, 128, 68);
-        float: left;
     }
 
     #main-menu{
         width: 500px;
         min-height: 40px;
-        border-bottom: 3px solid var(--border-color);
-        margin: auto;
-        background-color: rgb(0, 255, 136);
-        align-content: center;
-        text-align: center;
     }
 
     #page{
         width: 500px;
         min-height: 600px;
-        border-radius: 5px;
-        border-style: solid;
-        margin: auto;
     }
 
     #content{
@@ -179,9 +168,7 @@ body {
         min-height: 700px;
         float: center;
         text-align: justify;
-        margin-left: 10px;
-        margin-right: 10px;
-        margin-bottom: -100px;
+        margin-bottom: -60px;
     }
 
     #aside-menu{
@@ -189,11 +176,7 @@ body {
         min-height: 700px;
         border-left: 0px;
         margin-top: 1px;
-        border-top: 3px solid var(--border-color);
         float: center;
-        background-color: rgb(168, 168, 168);
-        color: black;
-        text-align: justify;
     }
 
     #logo{
@@ -239,28 +222,17 @@ body {
     #banner{
         width: 450px;
         min-height: 125px;
-        border-bottom: 3px solid var(--border-color);
-        margin: auto;
-        background-color: rgb(0, 128, 68);
-        float: left;
     }
 
     #main-menu{
         width: 450px;
         min-height: 40px;
-        border-bottom: 3px solid var(--border-color);
         margin: auto;
-        background-color: rgb(0, 255, 136);
-        align-content: center;
-        text-align: center;
     }
 
     #page{
         width: 450px;
         min-height: 600px;
-        border-radius: 5px;
-        border-style: solid;
-        margin: auto;
     }
 
     #content{
@@ -268,10 +240,7 @@ body {
         min-height: 700px;
         float: center;
         text-align: justify;
-        margin-left: 10px;
-        margin-right: 10px;
-        margin-bottom: -45px;
-
+        margin-bottom: -10px;
     }
 
     #aside-menu{
@@ -279,11 +248,7 @@ body {
         min-height: 700px;
         border-left: 0px;
         margin-top: 1px;
-        border-top: 3px solid var(--border-color);
         float: center;
-        background-color: rgb(168, 168, 168);
-        color: black;
-        text-align: justify;
     }
 
     #logo{
