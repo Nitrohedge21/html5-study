@@ -1,6 +1,12 @@
-	Notes I'm taking for the HTML5 study.
-    
-    <!--This is an HTML comment-->
+--------------------------------------------------------
+// Notes I'm taking for the website development study.\\
+--------------------------------------------------------
+
+------------------
+// HTML5 & CSS3 \\
+------------------
+
+<!--This is an HTML comment-->
 
 
 // "title" is used to display a text upon hovering on the chosen text/button
@@ -55,6 +61,10 @@
 
 // In order to apply specific attributes while the website is in dark mode, it has to be done like below.
 .dark-mode .custom-class / .dark-mode #custom-id / .dark-mode #custom-id:hover
+
+----------------
+// Javascript \\
+----------------
 
 // In Javascript, you don't need to specificy the type of the variable.
 var X = true / var X = 5 / var X = "name"
