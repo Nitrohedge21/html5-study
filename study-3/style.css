@@ -1,20 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Margarine&display=swap');
 
 @media screen and (max-width: 768px)
-{ *{
-    color: whitesmoke;
-    font-family: sans-serif, cursive;
-    width: 100%;
-}
+{
+    *{
+        color: whitesmoke;
+        font-family: sans-serif, cursive;
+        width: 100%;
+    }
 }
 
-*
-{
+*{
     box-sizing: border-box;
 }
 
-body
-{
+body{
     font-family: "Margarine", cursive ;
     font-optical-sizing: auto;
     font-weight:bold;
@@ -26,8 +25,7 @@ body
     color: wheat;
 }
 
-#icon
-{
+#icon{
     display: flex;
     margin: auto;
     margin-top: 10px;
@@ -39,4 +37,9 @@ body
     border-width: 10px;
     padding: 10px;
 
+}
+
+#footer{
+    display: flex;
+    justify-content: center;
 }
