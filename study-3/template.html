@@ -16,6 +16,30 @@
 
     <body>
 
+        <script>
+            
+            class Rectangle
+            {
+                static width = 0;
+                static height = 0;
+
+                Calculate()
+                {
+                    return (this.width * this.height) / 2;
+                }
+            }
+
+            var testx = new Rectangle();
+
+            testx.width = Number(prompt("Width:"));
+
+            testx.height = Number(prompt("Height:"));
+
+            document.write(testx.Calculate());
+
+        </script>
+
+
         <b> The current user's name is </b> <b id="visitor-name"></b>
 
         <header id="banner">
@@ -23,7 +47,7 @@
                 id="icon"
                 src="images/black-sun.png"
                 alt="theme-icon"
-                onclick="PlaySound()">
+                onclick="playSound()">
             </input>
         </header>
         
@@ -42,12 +66,14 @@
 
             <aside id="aside-menu">
            
-            <img src="images/white-moon.png" style="border: 5px solid;
+            <img src="images/white-moon.png" 
+            style="border: 5px solid;
             border-radius: 10px;
             width: 100px;
             height: 50px;
             object-fit: fill;
-            padding: 10px;">
+            padding: 10px;"
+            alt="white-moon">
 
             </aside>
     </body>

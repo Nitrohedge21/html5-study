@@ -1,10 +1,10 @@
-// Run this upon visitng the website
-GetVisitorName();
+// Run this upon visiting the website
+getVisitorName();
 
 var audio = new Audio('audio/button-click.mp3');
 audio.volume = 0.5; // This is between 0 & 1
 
-function PlaySound()
+function playSound()
 {
     if(audio.paused)
     {
@@ -16,7 +16,7 @@ function PlaySound()
     }
 }
 
-function GetVisitorName()
+function getVisitorName()
 {
     var visitorName = String(prompt("What's your name?"));
 
@@ -32,7 +32,7 @@ function GetVisitorName()
     currentUser.innerHTML = visitorName;
 }
 
-function TestComparison()
+function testComparison()
 {
     var weather = Number(prompt("Weather"));
 
