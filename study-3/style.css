@@ -5,7 +5,7 @@
     *{
         color: whitesmoke;
         font-family: sans-serif, cursive;
-        width: 100%;
+
     }
 }
 
@@ -27,9 +27,6 @@ body{
 
 #icon{
     display: flex;
-    margin: auto;
-    margin-top: 10px;
-    margin-bottom: 10px;
     width: 75px;
     height: 75px;
     border: dashed;
@@ -39,7 +36,30 @@ body{
 
 }
 
+#banner
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
 #footer{
     display: flex;
     justify-content: center;
+}
+
+.function-button
+{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    background-color: darkgray;
+    border: groove 5px darkgray;
+}
+
+.function-button:hover
+{
+    background-color: lightgray;
 }

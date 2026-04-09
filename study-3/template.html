@@ -16,30 +16,6 @@
 
     <body>
 
-        <script>
-            
-            class Rectangle
-            {
-                static width = 0;
-                static height = 0;
-
-                Calculate()
-                {
-                    return (this.width * this.height) / 2;
-                }
-            }
-
-            var testx = new Rectangle();
-
-            testx.width = Number(prompt("Width:"));
-
-            testx.height = Number(prompt("Height:"));
-
-            document.write(testx.Calculate());
-
-        </script>
-
-
         <b> The current user's name is </b> <b id="visitor-name"></b>
 
         <header id="banner">
@@ -48,7 +24,15 @@
                 src="images/black-sun.png"
                 alt="theme-icon"
                 onclick="playSound()">
-            </input>
+
+            <img src="images/white-moon.png"
+                style="border: 5px solid;
+                border-radius: 10px;
+                width: 75px;
+                height: 75px;
+                padding: 10px;"
+                alt="white-moon"
+                title="Boo! I'm not a button!!!">
         </header>
         
             <section id="button-wrapper">
@@ -65,15 +49,10 @@
             </article>
 
             <aside id="aside-menu">
-           
-            <img src="images/white-moon.png" 
-            style="border: 5px solid;
-            border-radius: 10px;
-            width: 100px;
-            height: 50px;
-            object-fit: fill;
-            padding: 10px;"
-            alt="white-moon">
+
+            <button class="function-button"
+             onclick="calculateRatio()"> Click to test function #1
+            </button>
 
             </aside>
     </body>

@@ -51,3 +51,31 @@ function testComparison()
         alert("warm!");
     }
 }
+
+class Rectangle
+{
+    static width = 0;
+    static height = 0;
+
+    Calculate()
+    {
+        return (this.width * this.height) / 2;
+    }
+
+}
+
+function calculateRatio()
+{
+    var testx = new Rectangle();
+
+    testx.width = Number(prompt("Width:"));
+
+    testx.height = Number(prompt("Height:"));
+
+    alert("The ratio is " + testx.Calculate());
+}
+
+
+
+
+            
