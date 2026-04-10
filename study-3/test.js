@@ -1,5 +1,7 @@
 // Run this upon visiting the website
 getVisitorName();
+var timerInterval = 1000;
+setInterval(websiteTimeout, timerInterval);
 
 var audio = new Audio();
 audio.volume = 0.5; // This is between 0 & 1
@@ -93,5 +95,20 @@ function openLink(website) {
     }
 }
 
+var timerLength = 10;
 
-            
+function websiteTimeout() {
+    // 1. Increment total time
+    totalSeconds--;
+
+    // 2. Use Modulo (%) 60 to make it "reset" to 0 after 59
+    // If you want it to keep counting past 60 (e.g. 61, 62) but stay 2 digits, 
+    // just remove the "% 60" part.
+    var displaySecs = totalSeconds % 60;
+
+    // 3. Force it to be two digits
+    var formattedSeconds = String(displaySecs).padStart(2, '0');
+
+    // 4. Update the display
+    document.getElementById("timer").innerHTML = formattedSeconds;
+}
