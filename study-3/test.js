@@ -1,11 +1,16 @@
 // Run this upon visiting the website
 getVisitorName();
 
-var audio = new Audio('audio/button-click.mp3');
+var audio = new Audio();
 audio.volume = 0.5; // This is between 0 & 1
 
-function playSound()
+function playSound(soundToPlay)
 {
+    audio.src = soundToPlay;
+
+    // The logic down here seems to be ignored.
+    // The sfx is spammable but it just starts it from the beginning
+    // instead of adding onto the existing one.
     if(audio.paused)
     {
         audio.play();
@@ -75,7 +80,18 @@ function calculateRatio()
     alert("The ratio is " + testx.Calculate());
 }
 
-
+function openLink(website) {
+    
+    if (!website)
+    {
+        window.open("https://google.com", "_blank");
+    }
+    else
+    {
+        const fullUrl = "https://" + website;
+        window.open(fullUrl, "_blank");
+    }
+}
 
 
             

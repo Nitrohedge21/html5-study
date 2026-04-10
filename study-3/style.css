@@ -1,11 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Margarine&display=swap');
 
-@media screen and (max-width: 768px)
+/* Certain things change upon zooming in and out. The default width value seems to be 2000. */
+@media screen and (max-width: 1600px)
 {
     *{
         color: whitesmoke;
         font-family: sans-serif, cursive;
 
+    }
+}
+
+@media screen and (min-width: 2200px) {
+    * {
+        color: black;
+        font-family:'Times New Roman', Times, serif;
     }
 }
 
