@@ -1,7 +1,8 @@
 // Run this upon visiting the website
 getVisitorName();
-var timerInterval = 1000;
-setInterval(websiteTimeout, timerInterval);
+
+// The interval being set to 1000 makes it take off a second each time.
+var customTimer = setInterval(websiteTimeout, 1000);
 
 var audio = new Audio();
 audio.volume = 0.5; // This is between 0 & 1
@@ -98,17 +99,62 @@ function openLink(website) {
 var timerLength = 10;
 
 function websiteTimeout() {
-    // 1. Increment total time
-    totalSeconds--;
+    
+    // Increment total time
+    timerLength--;
 
-    // 2. Use Modulo (%) 60 to make it "reset" to 0 after 59
+    // Use Modulo (%) 60 to make it "reset" to 0 after 59
     // If you want it to keep counting past 60 (e.g. 61, 62) but stay 2 digits, 
     // just remove the "% 60" part.
-    var displaySecs = totalSeconds % 60;
+    var displaySecs = timerLength;
 
-    // 3. Force it to be two digits
-    var formattedSeconds = String(displaySecs).padStart(2, '0');
+    //  Force it to be X digits
+    var formattedSeconds = String(displaySecs).padStart(3, '0');
 
-    // 4. Update the display
     document.getElementById("timer").innerHTML = formattedSeconds;
+
+    if (timerLength <= 0)
+    {
+        addMoreTime();
+        clearInterval(customTimer);
+    }
+}
+
+function addMoreTime()
+{
+    var userChoice = prompt("Extend time by 1/5/10 minutes or stop here. (A/B/C/D)");
+    userChoice = userChoice.toUpperCase();
+   
+    switch (userChoice)
+    {
+        case "A":
+            timerLength += 60;
+            startTimer();
+        break;
+
+        case "B":
+            timerLength += 300;
+            startTimer();
+        break;
+
+        case "C":
+            timerLength += 600;
+            startTimer();
+        break;
+
+        case "D":
+            clearInterval(customTimer);
+            startTimer();
+        break;
+
+        default:
+            console.log("Invalid choice selected.");
+            addMoreTime();
+        break;
+    }
+}
+
+function startTimer()
+{
+    customTimer = setInterval(websiteTimeout, 1000);
 }
